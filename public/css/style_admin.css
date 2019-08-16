@@ -1,0 +1,193 @@
+body
+{
+	background-color: #77B5FE;
+	margin: 0px;
+}
+#contenu
+{
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid white;
+    border-top: none;
+}
+*
+{
+	font-family: "Arial";
+	color: black;
+}
+header
+{
+	background-color: white;
+	padding: 20px;
+}
+h1
+{
+	font-size: 30px;
+	font-weight: bold;
+	color: #77B5FE;
+}
+h1,h2
+{
+	text-align: center
+}
+#welcom
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    font-style: italic;
+    color: white;
+}
+#post_number,
+{
+    display: none;
+}
+#connexion {
+    width: 25%;
+    margin: 0 auto;
+}
+#connexion label
+{
+    display: block;
+    width: 135px;
+    float: left;
+}
+label {
+	display: block;
+	width: 30px;
+	float: left;
+}
+input {
+    margin-bottom: 10px;
+    color: black;
+}
+input:focus {
+  background-color: khaki;
+}
+.return
+{
+	margin : 20px;
+}
+.site_return
+{
+	text-decoration: none;
+	margin-left: 5px;
+    text-align: right;
+}
+#menu
+{
+    margin: 30px;
+    height: 80px;
+    border-bottom: 1px dotted white;
+}
+nav ul
+{
+    display: flex;
+  	justify-content: center;
+    list-style-type: none;
+}
+nav li
+{   
+    margin-right: 10px;
+    padding: 10px;   
+}
+nav a
+{
+    font-size: 25px;
+    color: #77B5FE;
+    padding: 10px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid #77B5FE;
+    border-radius: 10px;
+}
+nav a:hover
+{
+    font-weight: bold;
+}
+table
+{
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+td
+{
+    border: 2px solid #77B5FE;
+    text-align: center;
+    padding: 10px;
+}
+td:nth-child(1) {
+  width: 130px;
+}
+td:nth-child(2), td:nth-child(4) {
+  width: 240px;
+}
+td>h3>a, td>p
+{
+	color: #77B5FE;
+}
+.bg_white
+{
+    background-color: white;
+}
+#preview
+{
+	background-color: white;
+	border-radius: 10px;
+	padding: 5px;
+}
+#preview *
+{
+	color:black;
+}
+#post
+{
+    background-color: white;
+    margin: 30px;
+    padding: 30px;
+}
+#post>h3, #pagination
+{
+    text-align:center;
+}
+#removal 
+{
+    display: none;
+    margin: 50px;
+}
+.action
+{
+    text-decoration: underline;
+        cursor: pointer;
+}
+#addPost label
+{
+    display: block;
+    width: 40px;
+    float: left;
+}
+#addAdmin
+{
+    margin: 0 auto;
+    width: 150px;
+}
+#addAdmin label
+{
+    display: block;
+    width: 175px;
+    float: left;
+}
+#disconnected
+{
+    display: block;
+    margin: 0 auto;
+}
+footer
+{
+    text-align: center;
+}
+footer p 
+{
+    color : white;
+}

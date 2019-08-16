@@ -1,0 +1,397 @@
+@font-face {
+font-family: 'Segoe UI Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe UI Regular'), url('public/css/fonts/Segoe_UI/Segoe_UI.woff') format('woff');
+}
+@-webkit-keyframes appear /* Safari, Opera, Chrome */
+{    
+    0%   {-webkit-color:rgba(255,255,255,0);}
+    10%  {-webkit-color:rgba(255,255,255,0.1);}
+    20%  {-webkit-color:rgba(255,255,255,0.2);}
+    30%  {-webkit-color:rgba(255,255,255,0.3);}
+    40%  {-webkit-color:rgba(255,255,255,0.4);}
+    50%  {-webkit-color:rgba(255,255,255,0.5);}
+    60%  {-webkit-color:rgba(255,255,255,0.6);} 
+    70%  {-webkit-color:rgba(255,255,255,0.7);}
+    80%  {-webkit-color:rgba(255,255,255,0.8);}
+    90%  {-webkit-color:rgba(255,255,255,0.9);}
+    100% { -webkit-color:rgba(255,255,255,1);}
+}
+@keyframes appear  /* Tous les autres navigateurs */
+{
+    0%   {color:rgba(255,255,255,0);}
+    10%  {color:rgba(255,255,255,0.1);}
+    20%  {color:rgba(255,255,255,0.2);}
+    30%  {color:rgba(255,255,255,0.3);}
+    40%  {color:rgba(255,255,255,0.4);}
+    50%  {color:rgba(255,255,255,0.5);}
+    60%  {color:rgba(255,255,255,0.6);} 
+    70%  {color:rgba(255,255,255,0.7);}
+    80%  {color:rgba(255,255,255,0.8);}
+    90%  {color:rgba(255,255,255,0.9);}
+    100% {color:rgba(255,255,255,1);}
+}
+@-webkit-keyframes go_down
+{
+  from  {transform: translateY(-60px)} 
+  to    {transform: translateY(0px)}
+}
+
+@keyframes go_down 
+{
+  from  {transform: translateY(-60px)} 
+  to    {transform: translateY(0px)}
+}
+*
+{
+    font-family:"Segoe UI Regular";
+}
+body
+{
+	background-color: brown;
+    margin: 0px;
+}
+#contenu
+{
+    width: 88%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-top: none;
+    background-color: white;
+}
+header>h1,header> h2 
+{
+	text-align: center;
+	color: white;
+    position: relative;
+    margin: 0px;
+}
+header>h1
+{
+    top: 160px;
+    font-size: 50px;
+    font-style: italic;
+    text-decoration: underline;
+    animation: appear 3s ease-in-out;
+    -webkit-animation: appear 3s ease-in-out;
+}
+header>h2
+{
+    top: 423px;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    margin: 0 auto;
+    height: 41px;
+    padding-top: 10px;
+    font-size: 30px;
+    animation: go_down 1s;
+    -webkit-animation: go_down 1s;
+}
+h3
+{
+    font-size: 25px;
+}
+h4
+{
+    font-size: 20px;
+}
+header
+{
+    background-image: url('../../public/images/alaska_route.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height:540px;
+    width: 90%;
+    margin: 0 auto;
+}
+header>img
+{
+    display: block;
+    margin: 0 auto;
+}
+#menu
+{
+    margin: 30px;
+    height: 80px;
+    border-bottom: 1px dotted;
+}
+#menu>h2
+{
+    display: none;
+}
+nav ul
+{
+    display: flex;
+  	justify-content: center;
+    list-style-type: none;
+}
+nav li
+{   
+    margin-right: 10px;
+    padding: 10px;   
+}
+nav a
+{
+    font-size: 25px;
+    color: linen;
+    padding: 10px;
+    text-decoration: none;
+    background-color: brown;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+nav a:hover
+{
+    font-weight: bold;
+}
+#posts h3,p
+{
+    text-align: center;
+}
+#post
+{
+    margin: 50px;
+}
+.news p
+{
+    margin-top:0px;
+}
+.news
+{
+    width:70%;
+    margin:auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-color: black;
+    overflow: hidden;
+    height: 300px;
+}
+.post_limited 
+{
+    overflow: hidden;
+    height: 170px;
+    margin: 0px;
+    padding: 0px;
+}
+.news legend
+{
+    text-align: right;
+}
+.read_post 
+{
+    height: 15px;
+    margin: 0px;
+    font-size: x-large;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    bottom: 30px;
+    padding-top: 15px;
+    background-image: linear-gradient(to top, white 84%,rgba(255,255,255,0.5) 96%);
+    text-align: center;
+}
+.read_post a
+{
+    display: none;
+    color: brown;
+    border: 0.5px solid brown;
+    padding: 0px 40px;
+    border-radius: 10px;
+    transition: 0.6s ease;
+    text-decoration: none
+}
+.read_post a:hover
+{
+    color: white;
+    background-color: brown;
+}
+fieldset:hover  .read_post a
+{
+    display: inline;
+}
+#pagination {
+    text-align: center;
+    margin: 20px;
+}
+#pagination a {
+    text-decoration: none;
+    color:black;
+}
+#pagination a:hover {
+    text-decoration: underline;
+    color:brown;
+    transition: 0.6s ease;
+}
+.active {
+    background-color: brown;
+    color:white;
+    padding: 5px;
+}
+#error
+{
+    color: white;
+    background-color: red;
+    font-weight: bold;
+}
+.reporting {
+    display: block;
+    text-align: right;
+    margin-top: 7px;    
+    text-decoration: none;
+}
+footer
+{
+    background-color: black;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+}
+footer>p, footer>p>a
+{
+    margin: 5px;
+    color: white;
+}
+#connexion
+{
+    text-decoration: none
+}
+#access {
+    text-align: center;
+    margin: 30px;
+}
+.site_return
+{
+    text-decoration: none;
+    margin-left: 5px;
+}
+div, p
+{
+    margin: 10px;
+    padding: 10px;
+}
+.comment
+{
+    margin: 30px auto;
+    width: 300px;
+}
+.white
+{
+    color: linen;
+}
+.brown
+{
+    color: brown;
+}
+.bg_brown
+{
+    background-color: brown;
+}
+.bg_lightgrey
+{
+    background-color: lightgrey;
+}
+table
+{
+    border-collapse: collapse;
+}
+td
+{
+    margin: 0px 2px;
+    width: 295px;
+    height: 30px;  
+    padding: 5px  
+}
+#other_text>h3
+{
+    text-align: center;
+}
+#other_text>p
+{
+    text-align: left;
+}
+#access_post
+{
+    display: none;
+    padding: 10px;
+    background-color: brown;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#access_post a:hover
+{
+    text-decoration: none;
+}
+#selection>p
+{
+    margin: 0px;
+    padding: 5px;
+}
+#post_number
+{
+    display: none;
+}
+input 
+{
+    margin: 5px;
+}
+label {
+    display: block;
+    width: 70px;
+    float: left;
+}
+#contact h3
+{
+    text-align: center;
+}
+#contact p
+{
+    text-align: left;
+}
+#contact textarea 
+{
+    width: 500px;
+    height: 200px;
+}
+#report
+{
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+   nav ul {
+    flex-wrap: wrap;
+    height: 171px;
+    }
+    #menu {
+        height: unset;
+    }
+}
+@media only screen and (max-width: 440px) {
+       #menu {
+        margin: unset;
+        padding: unset;
+        width: unset;
+    }
+    nav a {
+        padding: 2px;
+    }
+    header>h2 {        
+        top: 315px;
+        height: 81px;
+    }
+    .read_post a {
+        padding: 0px 25px;
+    }
+    .comments {
+        width: 300px;
+    }
+    #pagination {
+        margin: 0px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .comments {
+        width: 260px;
+    }
+}
